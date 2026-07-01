@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedication and 1st Birthday of Kane Ryler A. Cordero</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1d1710;
+            --navy: #143a66;
+            --blue: #5fa9d9;
+            --sky: #e3f5ff;
+            --ivory: #fbf5e9;
+            --pearl: #fffaf2;
+            --sage: #5b8fb0;
+            --gold: #c8a15a;
+            --rose: #b87967;
+            --muted: #75695d;
+            --white: #ffffff;
+            --shadow-soft: 0 22px 60px rgba(29, 23, 16, 0.12);
+            --shadow-strong: 0 30px 80px rgba(29, 23, 16, 0.24);
+            --ease: all 0.35s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id] {
+            scroll-margin-top: 96px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(180deg, #fffaf2 0%, #f6efe1 48%, #fffaf2 100%);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+            padding: 18px 6%;
+            background: rgba(255, 250, 242, 0.9);
+            border-bottom: 1px solid rgba(200, 161, 90, 0.22);
+            box-shadow: 0 14px 38px rgba(29, 23, 16, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .brand {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: var(--navy);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(12px, 1.6vw, 22px);
+        }
+
+        .nav-links a {
+            position: relative;
+            text-decoration: none;
+            color: #5e564c;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            transition: var(--ease);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 100%;
+            height: 2px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--ease);
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--navy);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a:focus-visible::after {
+            transform: scaleX(1);
+        }
+
+        .nav-cta,
+        .primary-action,
+        .secondary-action,
+        button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: var(--ease);
+            cursor: pointer;
+        }
+
+        .nav-cta {
+            padding: 0 22px;
+            color: var(--ivory);
+            background: linear-gradient(135deg, #143a66, #27699f);
+            border: 1px solid rgba(200, 161, 90, 0.38);
+            box-shadow: 0 12px 28px rgba(20, 58, 102, 0.24);
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover,
+        .nav-cta:focus-visible {
+            background: linear-gradient(135deg, #27699f, #5fa9d9);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            position: relative;
+            isolation: isolate;
+            min-height: 92svh;
+            display: flex;
+            align-items: center;
+            padding: 124px 6% 64px;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 242, 0.98) 0%, rgba(251, 245, 233, 0.94) 42%, rgba(251, 245, 233, 0.64) 66%, rgba(20, 58, 102, 0.18) 100%),
+                url("img2.jpg") right center / cover no-repeat;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 250, 242, 0.86)),
+                repeating-linear-gradient(90deg, rgba(200, 161, 90, 0.07) 0 1px, transparent 1px 118px);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 18px;
+            background: linear-gradient(90deg, var(--gold), var(--navy), var(--rose), var(--sage));
+            opacity: 0.92;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: min(720px, 100%);
+        }
+
+        .cross-emblem {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+        }
+
+        .cross-emblem::before,
+        .cross-emblem::after {
+            content: '';
+            width: 42px;
+            height: 1px;
+            background: currentColor;
+        }
+
+        .eyebrow {
+            color: var(--sage);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            max-width: 650px;
+            font-family: 'Cinzel', serif;
+            font-size: 68px;
+            line-height: 0.98;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: var(--navy);
+            text-shadow: 0 12px 32px rgba(29, 23, 16, 0.08);
+        }
+
+        .script-line {
+            display: block;
+            margin-top: -6px;
+            font-family: 'Pinyon Script', cursive;
+            font-size: 58px;
+            line-height: 0.95;
+            color: var(--gold);
+        }
+
+        .hero-copy {
+            max-width: 560px;
+            margin-top: 24px;
+            color: #51483e;
+            font-size: 17px;
+            line-height: 1.85;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .primary-action,
+        .secondary-action {
+            padding: 0 28px;
+        }
+
+        .primary-action {
+            color: var(--ivory);
+            background: linear-gradient(135deg, #143a66, #1f5f8f);
+            border: 1px solid var(--navy);
+            box-shadow: 0 18px 35px rgba(20, 58, 102, 0.24);
+        }
+
+        .secondary-action {
+            color: var(--navy);
+            background: rgba(255, 250, 242, 0.78);
+            border: 1px solid rgba(200, 161, 90, 0.42);
+        }
+
+        .primary-action:hover,
+        .primary-action:focus-visible,
+        .secondary-action:hover,
+        .secondary-action:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(20, 58, 102, 0.2);
+        }
+
+        .secondary-action:hover,
+        .secondary-action:focus-visible {
+            background: var(--white);
+        }
+
+        .hero-facts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            max-width: 800px;
+            margin-top: 42px;
+        }
+
+        .hero-fact {
+            min-height: 118px;
+            padding: 20px 22px;
+            background: rgba(255, 250, 242, 0.8);
+            border: 1px solid rgba(200, 161, 90, 0.28);
+            border-top: 3px solid var(--gold);
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(29, 23, 16, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-fact dt {
+            color: var(--sage);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero-fact dd {
+            color: var(--ink);
+            font-size: 14px;
+            line-height: 1.55;
+            font-weight: 600;
+        }
+
+        .hero-cutout {
+            position: absolute;
+            z-index: 1;
+            right: max(24px, 6vw);
+            bottom: -420px;
+            width: min(55vw, 806px);
+            transform: translateX(20%);
+            filter: drop-shadow(0 26px 38px rgba(29, 23, 16, 0.24)) sepia(0.08) saturate(0.92);
+            pointer-events: none;
+        }
+
+        .section-band {
+            position: relative;
+            padding: 112px 6%;
+        }
+
+        .light-band + .light-band {
+            border-top: 1px solid rgba(200, 161, 90, 0.16);
+        }
+
+        .section-inner {
+            width: min(1160px, 100%);
+            margin: 0 auto;
+        }
+
+        .dark-band {
+            color: var(--white);
+            background:
+                linear-gradient(135deg, rgba(29, 23, 16, 0.98), rgba(20, 58, 102, 0.96)),
+                linear-gradient(90deg, rgba(200, 161, 90, 0.18), transparent);
+        }
+
+        .light-band {
+            color: var(--ink);
+            background:
+                linear-gradient(180deg, var(--pearl), #f3ecdc);
+        }
+
+        .section-heading {
+            max-width: 720px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 74px;
+            height: 1px;
+            margin: 22px auto 0;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .section-heading span {
+            display: block;
+            margin-bottom: 12px;
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .light-band .section-heading span {
+            color: var(--sage);
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 34px;
+            line-height: 1.25;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: inherit;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            min-height: 100%;
+            padding: 36px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 250, 242, 0.05));
+            border: 1px solid rgba(246, 234, 212, 0.14);
+            border-top: 3px solid rgba(200, 161, 90, 0.78);
+            box-shadow: var(--shadow-soft);
+            transition: var(--ease);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.26);
+            box-shadow: var(--shadow-strong);
+        }
+
+        .light-card {
+            background: rgba(255, 250, 242, 0.88);
+            border: 1px solid rgba(200, 161, 90, 0.22);
+            border-top: 3px solid rgba(200, 161, 90, 0.72);
+            color: var(--ink);
+        }
+
+        .light-card:hover {
+            background: var(--white);
+            border-color: rgba(200, 161, 90, 0.42);
+        }
+
+        .card-label {
+            display: block;
+            color: var(--sky);
+            font-family: 'Cinzel', serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .light-card .card-label {
+            color: var(--navy);
+        }
+
+        .card p,
+        .card li {
+            color: rgba(255, 255, 255, 0.86);
+            font-size: 15px;
+            line-height: 1.85;
+        }
+
+        .light-card p,
+        .light-card li {
+            color: #5b5045;
+        }
+
+        .detail-block + .detail-block {
+            margin-top: 28px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .light-card .detail-block + .detail-block {
+            border-top-color: rgba(200, 161, 90, 0.2);
+        }
+
+        .parents-panel {
+            max-width: 760px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .name-line {
+            display: block;
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .parents-quote {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--sky);
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.75;
+        }
+
+        .sponsor-list {
+            margin-top: 18px;
+            list-style: none;
+            columns: 1;
+        }
+
+        .numbered-list {
+            padding-left: 22px;
+            list-style: decimal;
+            columns: 2;
+            column-gap: 32px;
+        }
+
+        .numbered-list li {
+            break-inside: avoid;
+            padding-left: 4px;
+        }
+
+        .sponsor-list li + li {
+            margin-top: 8px;
+        }
+
+        .photoshoot-band {
+            color: var(--white);
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 16% 18%, rgba(95, 169, 217, 0.34), transparent 30%),
+                radial-gradient(circle at 84% 26%, rgba(200, 161, 90, 0.18), transparent 26%),
+                linear-gradient(135deg, #071322 0%, #143a66 48%, #08111d 100%);
+        }
+
+        .photoshoot-band .section-heading span {
+            color: var(--sky);
+        }
+
+        .stellar-gallery {
+            position: relative;
+            display: grid;
+            justify-items: center;
+            gap: 24px;
+            min-height: 690px;
+            isolation: isolate;
+        }
+
+        .stellar-gallery::before,
+        .stellar-gallery::after {
+            content: '';
+            position: absolute;
+            inset: -10%;
+            z-index: -1;
+            background-image:
+                radial-gradient(circle, rgba(255, 255, 255, 0.72) 0 1px, transparent 1.5px),
+                radial-gradient(circle, rgba(227, 245, 255, 0.52) 0 1px, transparent 1.5px);
+            background-size: 150px 150px, 230px 230px;
+            background-position: 0 0, 42px 68px;
+            opacity: 0.22;
+            pointer-events: none;
+        }
+
+        .stellar-gallery::after {
+            filter: blur(1px);
+            opacity: 0.12;
+            transform: rotate(10deg);
+        }
+
+        .stellar-stage {
+            position: relative;
+            width: min(980px, 100%);
+            height: 560px;
+            perspective: 1200px;
+            transform-style: preserve-3d;
+            user-select: none;
+        }
+
+        .stellar-orbit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: min(720px, 80vw);
+            height: 260px;
+            border: 1px solid rgba(227, 245, 255, 0.16);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) rotateX(68deg);
+            box-shadow: 0 0 80px rgba(95, 169, 217, 0.12);
+            pointer-events: none;
+        }
+
+        .stellar-card {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: min(29vw, 238px);
+            height: 338px;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid rgba(227, 245, 255, 0.22);
+            background: rgba(255, 250, 242, 0.92);
+            box-shadow: 0 28px 62px rgba(0, 0, 0, 0.34);
+            opacity: var(--opacity, 0);
+            transform:
+                translate(-50%, -50%)
+                translateX(var(--x, 0px))
+                translateY(var(--y, 0px))
+                translateZ(var(--z, 0px))
+                rotateY(var(--rotate-y, 0deg))
+                rotateZ(var(--rotate-z, 0deg))
+                scale(var(--scale, 1));
+            transform-style: preserve-3d;
+            transition: transform 0.48s ease, opacity 0.48s ease, box-shadow 0.48s ease, border-color 0.48s ease;
+        }
+
+        .stellar-card.is-active {
+            border-color: rgba(200, 161, 90, 0.76);
+            box-shadow: 0 34px 80px rgba(0, 0, 0, 0.42), 0 0 42px rgba(95, 169, 217, 0.28);
+        }
+
+        .stellar-card:focus-visible {
+            outline: 3px solid rgba(227, 245, 255, 0.78);
+            outline-offset: 4px;
+        }
+
+        .stellar-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .stellar-card::after {
+            content: attr(data-title);
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            padding: 9px 10px;
+            border: 1px solid rgba(227, 245, 255, 0.18);
+            border-radius: 6px;
+            color: var(--white);
+            background: linear-gradient(180deg, rgba(20, 58, 102, 0.06), rgba(20, 58, 102, 0.72));
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.4px;
+            text-align: center;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: var(--ease);
+        }
+
+        .stellar-card.is-active::after,
+        .stellar-card:hover::after,
+        .stellar-card:focus-visible::after {
+            opacity: 1;
+        }
+
+        .stellar-controls {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 10px 14px;
+            border: 1px solid rgba(200, 161, 90, 0.34);
+            border-radius: 999px;
+            background: rgba(255, 250, 242, 0.88);
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+        }
+
+        .stellar-button,
+        .photo-icon-button {
+            min-width: 42px;
+            width: 42px;
+            min-height: 42px;
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            border-color: rgba(20, 58, 102, 0.2);
+            color: var(--navy);
+            background: var(--white);
+            font-size: 22px;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .stellar-button:hover,
+        .stellar-button:focus-visible,
+        .photo-icon-button:hover,
+        .photo-icon-button:focus-visible {
+            color: var(--white);
+            background: var(--navy);
+            border-color: var(--navy);
+        }
+
+        .stellar-counter {
+            min-width: 64px;
+            color: var(--navy);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.4px;
+            text-align: center;
+        }
+
+        .photo-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.28s ease, visibility 0.28s ease;
+        }
+
+        .photo-modal.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .photo-modal-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(3, 10, 20, 0.82);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .photo-modal-card {
+            position: relative;
+            z-index: 1;
+            width: min(430px, 92vw);
+            padding: 14px;
+            border: 1px solid rgba(200, 161, 90, 0.36);
+            border-radius: 8px;
+            background: #0b1523;
+            box-shadow: 0 36px 90px rgba(0, 0, 0, 0.48);
+            transform-style: preserve-3d;
+        }
+
+        .photo-modal-card img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .photo-modal-title {
+            margin: 14px 4px 2px;
+            color: var(--white);
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .photo-modal-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .photo-modal-close {
+            position: absolute;
+            top: -14px;
+            right: -14px;
+            z-index: 2;
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+        }
+
+.rsvp-section {
+            color: var(--white);
+            background:
+                linear-gradient(rgba(20, 58, 102, 0.84), rgba(29, 23, 16, 0.9)),
+                url("img2.jpg") center 35% / cover no-repeat;
+        }
+
+        .rsvp-wrapper {
+            width: min(820px, 100%);
+            margin: 0 auto;
+            padding: 52px;
+            border-radius: 8px;
+            border: 1px solid rgba(200, 161, 90, 0.28);
+            background: rgba(20, 58, 102, 0.76);
+            box-shadow: var(--shadow-strong);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            text-align: center;
+        }
+
+        .rsvp-wrapper h2 {
+            color: var(--white);
+        }
+
+        .rsvp-wrapper p {
+            margin: 12px 0 34px;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 16px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            outline: none;
+            transition: var(--ease);
+        }
+
+        select {
+            appearance: none;
+            background-image:
+                linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.78) 50%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.78) 50%, transparent 50%);
+            background-position:
+                calc(100% - 22px) 50%,
+                calc(100% - 16px) 50%;
+            background-size: 6px 6px, 6px 6px;
+            background-repeat: no-repeat;
+        }
+
+        select:invalid {
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        select option {
+            color: var(--navy);
+            background: var(--ivory);
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--gold);
+            background-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 0 4px rgba(200, 161, 90, 0.16);
+        }
+
+        .rsvp-reason-field[hidden] {
+            display: none;
+        }
+
+        button {
+            justify-self: center;
+            min-width: 210px;
+            margin-top: 10px;
+            padding: 0 32px;
+            border: 1px solid rgba(200, 161, 90, 0.42);
+            color: var(--ink);
+            background: var(--ivory);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        button:hover,
+        button:focus-visible {
+            transform: translateY(-2px);
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            padding: 34px 20px;
+            color: var(--muted);
+            background: var(--pearl);
+            border-top: 1px solid rgba(200, 161, 90, 0.22);
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 1100px) {
+            .hero {
+                background:
+                    linear-gradient(90deg, rgba(255, 250, 242, 0.99) 0%, rgba(251, 245, 233, 0.92) 58%, rgba(251, 245, 233, 0.58) 100%),
+                    url("img2.jpg") right center / cover no-repeat;
+            }
+
+            .hero h1 {
+                font-size: 56px;
+            }
+
+            .script-line {
+                font-size: 54px;
+            }
+
+            .hero-cutout {
+                width: 560px;
+                bottom: -325px;
+                opacity: 0.88;
+            }
+        }
+
+        @media (max-width: 860px) {
+            [id] {
+                scroll-margin-top: 132px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 14px 20px;
+                padding: 14px 24px;
+            }
+
+            .nav-links {
+                order: 3;
+                width: 100%;
+                justify-content: flex-start;
+                gap: 18px;
+                overflow-x: auto;
+                padding: 4px 0 2px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 156px 24px 56px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(251, 245, 233, 0.88)),
+                    url("img2.jpg") center top / cover no-repeat;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .script-line {
+                margin-top: -2px;
+                font-size: 44px;
+            }
+
+            .hero-copy {
+                font-size: 16px;
+            }
+
+            .hero-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cutout {
+                right: 0;
+                bottom: -198px;
+                width: 312px;
+                opacity: 0.42;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-band {
+                padding: 78px 24px;
+            }
+
+            .card,
+            .rsvp-wrapper {
+                padding: 28px;
+            }
+
+            .numbered-list {
+                columns: 1;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .brand {
+                font-size: 16px;
+            }
+
+            .nav-cta {
+                padding: 0 16px;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .script-line {
+                font-size: 34px;
+            }
+
+            .cross-emblem::before,
+            .cross-emblem::after {
+                width: 28px;
+            }
+
+            .hero-actions {
+                display: grid;
+            }
+
+            .primary-action,
+            .secondary-action {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+        /* Photoshoot stellar gallery sizing */
+        @media (max-width: 860px) {
+            .stellar-gallery {
+                min-height: 610px;
+            }
+
+            .stellar-stage {
+                height: 500px;
+            }
+
+            .stellar-card {
+                width: min(40vw, 210px);
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .stellar-gallery {
+                min-height: 560px;
+            }
+
+            .stellar-stage {
+                height: 450px;
+            }
+
+            .stellar-card {
+                width: min(62vw, 250px);
+                height: 350px;
+            }
+
+            .stellar-orbit {
+                width: 88vw;
+                height: 190px;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="Primary navigation">
+        <a class="brand" href="#home">Kane Ryler</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#details">Details</a>
+            <a href="#parents">Parents</a>
+            <a href="#photoshoot">Photoshoot</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#gifts">Gifts</a>
+            <a href="#rsvp">RSVP</a>
+        </div>
+        <a class="nav-cta" href="#rsvp">RSVP Now</a>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="cross-emblem" aria-hidden="true">&#10013;</div>
+            <p class="eyebrow">Please join us to celebrate the</p>
+            <h1>
+                Dedication and 1st Birthday
+                <span class="script-line">of Kane Ryler A. Cordero</span>
+            </h1>
+            <p class="hero-copy">
+                With grateful hearts, we invite you to celebrate the dedication
+                and first birthday of Kane Ryler A. Cordero.
+            </p>
+
+            <div class="hero-actions" aria-label="Invitation actions">
+                <a class="primary-action" href="#rsvp">Send RSVP</a>
+                <a class="secondary-action" href="#details">View Details</a>
+            </div>
+
+            <dl class="hero-facts" aria-label="Celebration highlights">
+                <div class="hero-fact">
+                    <dt>Date</dt>
+                    <dd>Sunday, July 12<br>9:00 AM</dd>
+                </div>
+                <div class="hero-fact">
+                    <dt>Celebrant</dt>
+                    <dd>Kane Ryler A. Cordero<br>Dedication and 1st Birthday</dd>
+                </div>
+                <div class="hero-fact">
+                    <dt>Venue</dt>
+                    <dd>Noecil Resort<br>Poblacion, Norala, South Cotabato</dd>
+                </div>
+            </dl>
+        </div>
+
+        <img src="img1-4k-nobg.png" alt="" class="hero-cutout" aria-hidden="true">
+    </header>
+
+    <main>
+        <section class="section-band dark-band" id="details">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span>Celebration Details</span>
+                    <h2>A blessed morning with family and friends</h2>
+                </div>
+
+                <div class="grid">
+                    <article class="card">
+                        <div class="detail-block">
+                            <span class="card-label">Date & Time</span>
+                            <p>Sunday, July 12<br>9:00 AM</p>
+                        </div>
+                        <div class="detail-block">
+                            <span class="card-label">Celebration</span>
+                            <p>Dedication and 1st Birthday<br>of Kane Ryler A. Cordero</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="detail-block">
+                            <span class="card-label">Venue</span>
+                            <p>Noecil Resort<br>Poblacion, Norala, South Cotabato</p>
+                        </div>
+                        <div class="detail-block">
+                            <span class="card-label">Location Address</span>
+                            <p>Poblacion, Norala, South Cotabato</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band dark-band" id="parents">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span>With Love From</span>
+                    <h2>Kane Ryler's Parents</h2>
+                </div>
+
+                <article class="card parents-panel">
+                    <span class="card-label">Father</span>
+                    <span class="name-line">Ramonito P. Cordero</span>
+
+                    <div class="detail-block">
+                        <span class="card-label">Mother</span>
+                        <span class="name-line">Rizel A. Cordero</span>
+                    </div>
+
+                    <p class="parents-quote">
+                        &ldquo;We appreciate your presence as we celebrate Kane Ryler's dedication and first birthday.&rdquo;
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-band photoshoot-band" id="photoshoot">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span>Captured Moments</span>
+                    <h2>Photoshoot</h2>
+                </div>
+
+                <div class="stellar-gallery" data-stellar-gallery>
+                    <div class="stellar-stage" data-stellar-stage aria-label="Kane Ryler photoshoot gallery">
+                        <div class="stellar-orbit" aria-hidden="true"></div>
+                        <article class="stellar-card" data-photo-index="0" data-title="Photo 01" data-image="photoshoot/photo-01.jpg" tabindex="0">
+                            <img src="photoshoot/photo-01.jpg" alt="Kane Ryler photoshoot portrait 1" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="1" data-title="Photo 02" data-image="photoshoot/photo-02.jpg" tabindex="0">
+                            <img src="photoshoot/photo-02.jpg" alt="Kane Ryler photoshoot portrait 2" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="2" data-title="Photo 03" data-image="photoshoot/photo-03.jpg" tabindex="0">
+                            <img src="photoshoot/photo-03.jpg" alt="Kane Ryler photoshoot portrait 3" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="3" data-title="Photo 04" data-image="photoshoot/photo-04.jpg" tabindex="0">
+                            <img src="photoshoot/photo-04.jpg" alt="Kane Ryler photoshoot portrait 4" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="4" data-title="Photo 05" data-image="photoshoot/photo-05.jpg" tabindex="0">
+                            <img src="photoshoot/photo-05.jpg" alt="Kane Ryler photoshoot portrait 5" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="5" data-title="Photo 06" data-image="photoshoot/photo-06.jpg" tabindex="0">
+                            <img src="photoshoot/photo-06.jpg" alt="Kane Ryler photoshoot portrait 6" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="6" data-title="Photo 07" data-image="photoshoot/photo-07.jpg" tabindex="0">
+                            <img src="photoshoot/photo-07.jpg" alt="Kane Ryler photoshoot portrait 7" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="7" data-title="Photo 08" data-image="photoshoot/photo-08.jpg" tabindex="0">
+                            <img src="photoshoot/photo-08.jpg" alt="Kane Ryler photoshoot portrait 8" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="8" data-title="Photo 09" data-image="photoshoot/photo-09.jpg" tabindex="0">
+                            <img src="photoshoot/photo-09.jpg" alt="Kane Ryler photoshoot portrait 9" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="9" data-title="Photo 10" data-image="photoshoot/photo-10.jpg" tabindex="0">
+                            <img src="photoshoot/photo-10.jpg" alt="Kane Ryler photoshoot portrait 10" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="10" data-title="Photo 11" data-image="photoshoot/photo-11.jpg" tabindex="0">
+                            <img src="photoshoot/photo-11.jpg" alt="Kane Ryler photoshoot portrait 11" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="11" data-title="Photo 12" data-image="photoshoot/photo-12.jpg" tabindex="0">
+                            <img src="photoshoot/photo-12.jpg" alt="Kane Ryler photoshoot portrait 12" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="12" data-title="Photo 13" data-image="photoshoot/photo-13.jpg" tabindex="0">
+                            <img src="photoshoot/photo-13.jpg" alt="Kane Ryler photoshoot portrait 13" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="13" data-title="Photo 14" data-image="photoshoot/photo-14.jpg" tabindex="0">
+                            <img src="photoshoot/photo-14.jpg" alt="Kane Ryler photoshoot portrait 14" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="14" data-title="Photo 15" data-image="photoshoot/photo-15.jpg" tabindex="0">
+                            <img src="photoshoot/photo-15.jpg" alt="Kane Ryler photoshoot portrait 15" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="15" data-title="Photo 16" data-image="photoshoot/photo-16.jpg" tabindex="0">
+                            <img src="photoshoot/photo-16.jpg" alt="Kane Ryler photoshoot portrait 16" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="16" data-title="Photo 17" data-image="photoshoot/photo-17.jpg" tabindex="0">
+                            <img src="photoshoot/photo-17.jpg" alt="Kane Ryler photoshoot portrait 17" loading="lazy" draggable="false">
+                        </article>
+                        <article class="stellar-card" data-photo-index="17" data-title="Photo 18" data-image="photoshoot/photo-18.jpg" tabindex="0">
+                            <img src="photoshoot/photo-18.jpg" alt="Kane Ryler photoshoot portrait 18" loading="lazy" draggable="false">
+                        </article>
+                    </div>
+
+                    <div class="stellar-controls" aria-label="Photoshoot controls">
+                        <button class="stellar-button" type="button" data-stellar-prev aria-label="Previous photo">&lsaquo;</button>
+                        <span class="stellar-counter" data-stellar-counter>1 / 18</span>
+                        <button class="stellar-button" type="button" data-stellar-next aria-label="Next photo">&rsaquo;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-band light-band" id="sponsors">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span>With Guidance From</span>
+                    <h2>Ninong & Ninang</h2>
+                </div>
+
+                <div class="grid">
+                    <article class="card light-card">
+                        <span class="card-label">Ninong</span>
+                        <ol class="sponsor-list numbered-list">
+                            <li>Pepito Celiz</li>
+                            <li>Antonio G. Fungan Jr.</li>
+                            <li>Edgar Gonzaga</li>
+                            <li>Welter Balunto</li>
+                            <li>Rolly C. Navarro</li>
+                            <li>Marven J. Feolog</li>
+                            <li>Jilord Laurence Prado</li>
+                            <li>Jared Balasoto</li>
+                            <li>Mr. and Mrs. Genie Balderos</li>
+                            <li>Charlie Tusalem</li>
+                            <li>Jimmy Castillo</li>
+                            <li>Renan A. Dagum</li>
+                            <li>Francisco Tillano</li>
+                            <li>Jhony Relliora</li>
+                            <li>Ramel Llanes</li>
+                            <li>Renz Garancho</li>
+                            <li>Vincent Paul Valdez</li>
+                            <li>Noel Tampador</li>
+                            <li>RJ Weaver</li>
+                            <li>Roy Cordero</li>
+                            <li>Larry Fullon</li>
+                            <li>Mr. & Mrs. Aladin A. Lamalan</li>
+                        </ol>
+                    </article>
+
+                    <article class="card light-card">
+                        <span class="card-label">Ninang</span>
+                        <ol class="sponsor-list numbered-list">
+                            <li>Cynthia Mae Dapilaga</li>
+                            <li>Mary Ann Remegio</li>
+                            <li>Jennet Aniversario</li>
+                            <li>May Dela Cruz</li>
+                            <li>Jennybelle D. Calanza</li>
+                            <li>Maria Loraine R. Gayola</li>
+                            <li>Ria Ann E. Dumalina</li>
+                            <li>Verina Grace G. Larconia</li>
+                            <li>Hydie A. Dudin</li>
+                            <li>Ritchel L. Gonzales</li>
+                            <li>Edna B. Pimentel</li>
+                            <li>Mary Grace Aljas</li>
+                            <li>Xyrene Kaye Maxian</li>
+                            <li>Mencha Lyra B. Jondoyran</li>
+                            <li>Zipporah P. Rugay</li>
+                            <li>Mae Ann C. Dellomes</li>
+                            <li>Grace F. Agustin</li>
+                            <li>Rhea Ferrer</li>
+                            <li>Lea Valeriano</li>
+                            <li>Ellen Escoto</li>
+                            <li>Cris Magbanua</li>
+                            <li>Nona Mae D. Dayo</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band light-band" id="gifts">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span>Presence & Prayers</span>
+                    <h2>Gift Ideas</h2>
+                </div>
+
+                <div class="grid">
+                    <article class="card light-card">
+                        <span class="card-label">If You Are Thinking Of Giving A Gift</span>
+                        <p>Your presence and prayers are highly appreciated, but if you're thinking of giving a gift, here are the gift ideas.</p>
+                        <ul class="sponsor-list">
+                            <li>Baby essentials</li>
+                            <li>Educational toys</li>
+                            <li>Monetary gift for savings</li>
+                        </ul>
+                    </article>
+
+                    <article class="card light-card">
+                        <span class="card-label">A Loving Note</span>
+                        <p>Just because we gave gift ideas doesn't mean you are obligated to give. Love, prayers, and your presence are the most precious gifts you can give.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band rsvp-section" id="rsvp">
+            <div class="section-inner">
+                <div class="rsvp-wrapper">
+                    <h2>RSVP</h2>
+                    <p>We appreciate your presence</p>
+
+                    <form data-rsvp-form action="https://docs.google.com/forms/d/e/1FAIpQLScKrC6-VWM1n4xTjwieT8lO1xTzUGKBpuy79hY_4T3KJ7wxxA/formResponse" method="POST" target="rsvp-google-form-target">
+                        <label class="sr-only" for="guest-name">Your Full Name</label>
+                        <input id="guest-name" name="entry.1498135098" type="text" placeholder="Your Full Name" autocomplete="name" required>
+
+                        <label class="sr-only" for="guest-contact">Contact Number</label>
+                        <input id="guest-contact" type="tel" placeholder="Contact Number" autocomplete="tel" required>
+
+                        <label class="sr-only" for="guest-attendance">Attendance Confirmation</label>
+                        <select id="guest-attendance" name="entry.877086558" required data-attendance-select>
+                            <option value="" selected disabled>Attendance Confirmation</option>
+                            <option value="Yes,  I'll be there">Attending</option>
+                            <option value="Sorry, can't make it">Not attending</option>
+                        </select>
+
+                        <div class="rsvp-reason-field" data-not-attending-reason hidden>
+                            <label class="sr-only" for="guest-reason">Reason for not attending</label>
+                            <textarea id="guest-reason" rows="3" placeholder="Reason for not attending"></textarea>
+                        </div>
+
+                        <label class="sr-only" for="guest-message">Message</label>
+                        <textarea id="guest-message" rows="4" placeholder="Message"></textarea>
+
+                        <input type="hidden" name="entry.1424661284" value="Website">
+                        <input type="hidden" name="entry.2606285" data-google-comments>
+
+                        <button type="submit">Send Response</button>
+                    </form>
+                    <iframe name="rsvp-google-form-target" title="RSVP submission" style="display: none;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Dedication and 1st Birthday Invitation | Designed with Elegance
+    </footer>
+
+    <script>
+        (() => {
+            const form = document.querySelector('[data-rsvp-form]');
+            const attendanceSelect = document.querySelector('[data-attendance-select]');
+            const reasonField = document.querySelector('[data-not-attending-reason]');
+            const reasonInput = document.querySelector('#guest-reason');
+            const commentsInput = document.querySelector('[data-google-comments]');
+            const submitButton = form?.querySelector('button[type="submit"]');
+
+            if (!form || !attendanceSelect || !reasonField || !reasonInput || !commentsInput || !submitButton) return;
+
+            const updateReasonField = () => {
+                const needsReason = attendanceSelect.value === "Sorry, can't make it";
+                reasonField.hidden = !needsReason;
+                reasonInput.required = needsReason;
+                if (!needsReason) reasonInput.value = '';
+            };
+
+            const updateCommentsField = () => {
+                const contactNumber = document.querySelector('#guest-contact').value.trim();
+                const reason = reasonInput.value.trim();
+                const message = document.querySelector('#guest-message').value.trim();
+                commentsInput.value = [
+                    contactNumber ? `Contact Number: ${contactNumber}` : '',
+                    reason ? `Reason for not attending: ${reason}` : '',
+                    message ? `Message: ${message}` : ''
+                ].filter(Boolean).join('\n') || 'No additional message.';
+            };
+
+            attendanceSelect.addEventListener('change', updateReasonField);
+            form.addEventListener('submit', (event) => {
+                updateReasonField();
+
+                if (!form.reportValidity()) {
+                    event.preventDefault();
+                    return;
+                }
+
+                updateCommentsField();
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sending...';
+
+                window.setTimeout(() => {
+                    alert('Thank you! Your RSVP has been sent.');
+                    form.reset();
+                    updateReasonField();
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send Response';
+                }, 1200);
+            });
+
+            updateReasonField();
+        })();
+
+        (() => {
+            const gallery = document.querySelector('[data-stellar-gallery]');
+            if (!gallery) return;
+
+            const stage = gallery.querySelector('[data-stellar-stage]');
+            const cards = [...gallery.querySelectorAll('.stellar-card')];
+            const counter = gallery.querySelector('[data-stellar-counter]');
+            const prevButton = gallery.querySelector('[data-stellar-prev]');
+            const nextButton = gallery.querySelector('[data-stellar-next]');
+            let activeIndex = 0;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+            let didDrag = false;
+            let isFavorited = false;
+            let autoplayTimer = null;
+            const autoplayDelay = 3000;
+
+            const modal = document.createElement('div');
+            modal.className = 'photo-modal';
+            modal.setAttribute('role', 'dialog');
+            modal.setAttribute('aria-modal', 'true');
+            modal.setAttribute('aria-hidden', 'true');
+            modal.innerHTML = `
+                <div class="photo-modal-backdrop" data-photo-close></div>
+                <div class="photo-modal-card" data-photo-modal-card>
+                    <button class="photo-icon-button photo-modal-close" type="button" data-photo-close aria-label="Close preview">&times;</button>
+                    <img data-photo-modal-img src="" alt="">
+                    <h3 class="photo-modal-title" data-photo-modal-title></h3>
+                    <div class="photo-modal-actions">
+                        <a class="photo-icon-button" data-photo-download href="#" download aria-label="Download photo">&#8681;</a>
+                        <button class="photo-icon-button" type="button" data-photo-heart aria-label="Favorite photo">&#9825;</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            const modalCard = modal.querySelector('[data-photo-modal-card]');
+            const modalImage = modal.querySelector('[data-photo-modal-img]');
+            const modalTitle = modal.querySelector('[data-photo-modal-title]');
+            const downloadLink = modal.querySelector('[data-photo-download]');
+            const heartButton = modal.querySelector('[data-photo-heart]');
+
+            const wrapIndex = (index) => (index + cards.length) % cards.length;
+
+            const relativeIndex = (index) => {
+                let relative = index - activeIndex;
+                if (relative > cards.length / 2) relative -= cards.length;
+                if (relative < -cards.length / 2) relative += cards.length;
+                return relative;
+            };
+
+            const layoutCards = () => {
+                const compact = window.matchMedia('(max-width: 540px)').matches;
+                const spread = compact ? 76 : 136;
+                const lift = compact ? 18 : 28;
+                const depth = compact ? 42 : 74;
+
+                cards.forEach((card, index) => {
+                    const relative = relativeIndex(index);
+                    const distance = Math.abs(relative);
+                    const visible = distance <= 5;
+                    const x = relative * spread;
+                    const y = Math.sin(relative * 0.85) * lift;
+                    const z = -distance * depth;
+                    const rotateY = relative * -13;
+                    const rotateZ = relative * -1.8;
+                    const scale = Math.max(0.72, 1 - distance * 0.075);
+                    const opacity = visible ? Math.max(0.18, 1 - distance * 0.14) : 0;
+
+                    card.style.setProperty('--x', `${x}px`);
+                    card.style.setProperty('--y', `${y}px`);
+                    card.style.setProperty('--z', `${z}px`);
+                    card.style.setProperty('--rotate-y', `${rotateY}deg`);
+                    card.style.setProperty('--rotate-z', `${rotateZ}deg`);
+                    card.style.setProperty('--scale', scale.toFixed(3));
+                    card.style.setProperty('--opacity', opacity.toFixed(3));
+                    card.style.zIndex = String(100 - distance);
+                    card.style.pointerEvents = visible ? 'auto' : 'none';
+                    card.classList.toggle('is-active', relative === 0);
+                    card.setAttribute('aria-hidden', visible ? 'false' : 'true');
+                });
+
+                if (counter) counter.textContent = `${activeIndex + 1} / ${cards.length}`;
+            };
+
+            const goTo = (index) => {
+                activeIndex = wrapIndex(index);
+                layoutCards();
+            };
+
+            const stopAutoplay = () => {
+                if (!autoplayTimer) return;
+                window.clearInterval(autoplayTimer);
+                autoplayTimer = null;
+            };
+
+            const startAutoplay = () => {
+                stopAutoplay();
+                autoplayTimer = window.setInterval(() => {
+                    if (!modal.classList.contains('is-open') && !document.hidden) {
+                        goTo(activeIndex + 1);
+                    }
+                }, autoplayDelay);
+            };
+
+            const restartAutoplay = () => {
+                stopAutoplay();
+                startAutoplay();
+            };
+
+            const openModal = (card) => {
+                const image = card.dataset.image || '';
+                const title = card.dataset.title || 'Photoshoot';
+                modalImage.src = image;
+                modalImage.alt = card.querySelector('img')?.alt || title;
+                modalTitle.textContent = title;
+                downloadLink.href = image;
+                isFavorited = false;
+                heartButton.innerHTML = '&#9825;';
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                stopAutoplay();
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                startAutoplay();
+            };
+
+            cards.forEach((card, index) => {
+                card.addEventListener('click', () => {
+                    if (didDrag) return;
+                    if (index === activeIndex) openModal(card);
+                    else goTo(index);
+                });
+
+                card.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        if (index === activeIndex) openModal(card);
+                        else goTo(index);
+                    }
+                });
+            });
+
+            stage.addEventListener('pointerdown', (event) => {
+                stopAutoplay();
+                isDragging = true;
+                startX = event.clientX;
+                currentX = event.clientX;
+                didDrag = false;
+                stage.setPointerCapture?.(event.pointerId);
+            });
+
+            stage.addEventListener('pointermove', (event) => {
+                if (!isDragging) return;
+                currentX = event.clientX;
+                if (Math.abs(currentX - startX) > 8) didDrag = true;
+            });
+
+            const endDrag = () => {
+                if (!isDragging) return;
+                const deltaX = currentX - startX;
+                isDragging = false;
+                startX = 0;
+                currentX = 0;
+
+                if (Math.abs(deltaX) > 45) {
+                    didDrag = true;
+                    goTo(activeIndex + (deltaX < 0 ? 1 : -1));
+                }
+
+                restartAutoplay();
+
+                window.setTimeout(() => {
+                    didDrag = false;
+                }, 0);
+            };
+
+            stage.addEventListener('pointerup', endDrag);
+            stage.addEventListener('pointercancel', endDrag);
+            prevButton?.addEventListener('click', () => {
+                goTo(activeIndex - 1);
+                restartAutoplay();
+            });
+            nextButton?.addEventListener('click', () => {
+                goTo(activeIndex + 1);
+                restartAutoplay();
+            });
+            modal.addEventListener('click', (event) => {
+                if (event.target.closest('[data-photo-close]')) closeModal();
+            });
+            heartButton.addEventListener('click', () => {
+                isFavorited = !isFavorited;
+                heartButton.innerHTML = isFavorited ? '&#9829;' : '&#9825;';
+            });
+            modalCard.addEventListener('mousemove', (event) => {
+                const rect = modalCard.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+                const rotateX = (y - rect.height / 2) / 24;
+                const rotateY = (rect.width / 2 - x) / 24;
+                modalCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            modalCard.addEventListener('mouseleave', () => {
+                modalCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            });
+            window.addEventListener('resize', layoutCards);
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) stopAutoplay();
+                else startAutoplay();
+            });
+            window.addEventListener('keydown', (event) => {
+                if (modal.classList.contains('is-open') && event.key === 'Escape') closeModal();
+                if (event.key === 'ArrowLeft') {
+                    goTo(activeIndex - 1);
+                    restartAutoplay();
+                }
+                if (event.key === 'ArrowRight') {
+                    goTo(activeIndex + 1);
+                    restartAutoplay();
+                }
+            });
+
+            layoutCards();
+            startAutoplay();
+        })();
+    </script>
+</body>
+</html>
