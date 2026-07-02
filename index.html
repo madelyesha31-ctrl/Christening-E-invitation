@@ -1052,31 +1052,46 @@
             }
 
             nav {
-                --mobile-nav-height: 72px;
-                min-height: 72px;
+                --mobile-nav-height: 76px;
+                --mobile-edge-space: clamp(20px, 6vw, 34px);
+                min-height: 76px;
                 flex-wrap: nowrap;
                 gap: 16px;
-                padding: 16px 22px;
+                padding: 17px var(--mobile-edge-space);
                 align-items: center;
                 justify-content: space-between;
-                background: var(--pearl);
-                box-shadow: 0 10px 26px rgba(29, 23, 16, 0.08);
+                background: rgba(255, 250, 242, 0.98);
+                border-bottom: 1px solid rgba(20, 58, 102, 0.06);
+                box-shadow: 0 10px 24px rgba(29, 23, 16, 0.06);
             }
 
             nav.is-menu-open {
-                background: var(--pearl);
+                background: rgba(255, 250, 242, 0.99);
+            }
+
+            .brand {
+                font-size: clamp(20px, 4.8vw, 25px);
+                line-height: 1;
+                letter-spacing: 3.4px;
+                text-transform: uppercase;
             }
 
             .menu-toggle {
                 display: inline-flex;
                 flex-direction: column;
                 flex: 0 0 auto;
+                align-items: center;
+                justify-content: center;
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: calc(var(--mobile-edge-space) - 6px);
+                width: 48px;
+                min-height: 48px;
                 margin: 0;
                 translate: 0 -50%;
                 z-index: 1;
+                gap: 7px;
+                color: #12355e;
             }
 
             .menu-toggle:hover,
@@ -1087,8 +1102,14 @@
                 box-shadow: none;
             }
 
+            .menu-toggle span {
+                width: 36px;
+                height: 2.5px;
+                border-radius: 999px;
+            }
+
             .menu-toggle[aria-expanded="true"] span:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
+                transform: translateY(9px) rotate(45deg);
             }
 
             .menu-toggle[aria-expanded="true"] span:nth-child(2) {
@@ -1096,7 +1117,7 @@
             }
 
             .menu-toggle[aria-expanded="true"] span:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-9px) rotate(-45deg);
             }
 
             .nav-links {
@@ -1265,21 +1286,28 @@
 
         @media (max-width: 540px) {
             nav {
-                --mobile-nav-height: 70px;
-                min-height: 70px;
+                --mobile-nav-height: 74px;
+                --mobile-edge-space: 18px;
+                min-height: 74px;
                 gap: 12px;
-                padding: 14px 18px;
+                padding: 15px var(--mobile-edge-space);
                 justify-content: space-between;
             }
 
             .brand {
-                font-size: 20px;
-                letter-spacing: 2px;
+                font-size: 21px;
+                letter-spacing: 3px;
             }
 
             .menu-toggle {
-                width: 42px;
-                min-height: 42px;
+                width: 46px;
+                min-height: 46px;
+            }
+
+            .menu-toggle span {
+                width: 34px;
+                height: 2.5px;
+                border-radius: 999px;
             }
 
             .nav-links {
@@ -1298,8 +1326,8 @@
             }
 
             .hero-content {
-                width: min(330px, 100%);
-                max-width: 330px;
+                width: min(330px, calc(100vw - 36px));
+                max-width: 100%;
             }
 
             .cross-emblem {
@@ -1320,8 +1348,8 @@
             }
 
             .script-line {
-                max-width: 330px;
-                font-size: 32px;
+                max-width: 100%;
+                font-size: clamp(28px, 7.8vw, 32px);
                 line-height: 0.92;
             }
 
@@ -1346,8 +1374,9 @@
             .hero-actions {
                 display: grid;
                 gap: 10px;
+                width: min(306px, 100%);
                 max-width: 306px;
-                margin-top: 28px;
+                margin: 28px auto 0;
             }
 
             .primary-action,
@@ -1377,20 +1406,22 @@
 
         @media (max-width: 380px) {
             nav {
-                padding: 14px 16px;
+                --mobile-edge-space: 20px;
+                padding: 14px var(--mobile-edge-space);
             }
 
             .brand {
-                font-size: 17px;
+                font-size: 18px;
+                letter-spacing: 2.6px;
             }
 
             .menu-toggle {
-                width: 38px;
-                min-height: 38px;
+                width: 42px;
+                min-height: 42px;
             }
 
             .menu-toggle span {
-                width: 26px;
+                width: 31px;
             }
 
             .hero {
@@ -1399,8 +1430,8 @@
             }
 
             .hero-content {
-                width: min(288px, 100%);
-                max-width: 288px;
+                width: min(288px, calc(100vw - 32px));
+                max-width: 100%;
             }
 
             .eyebrow {
@@ -1496,6 +1527,269 @@
                 width: min(500px, 90vw);
             }
         }
+
+        /* Final mobile homepage layout */
+        @media (max-width: 860px) {
+            :root {
+                --mobile-nav-height: 72px;
+            }
+
+            nav {
+                --mobile-edge-space: 10px;
+                position: fixed !important;
+                left: 0 !important;
+                right: 0 !important;
+                top: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: 100% !important;
+                height: var(--mobile-nav-height);
+                min-height: var(--mobile-nav-height);
+                padding: 0 var(--mobile-edge-space);
+                gap: 16px;
+                background: rgba(255, 250, 242, 0.99);
+                border-bottom: 1px solid rgba(20, 58, 102, 0.06);
+                box-shadow: 0 8px 22px rgba(29, 23, 16, 0.06);
+            }
+
+            .brand {
+                flex: 0 1 auto;
+                font-size: clamp(18px, 5.6vw, 24px);
+                letter-spacing: 3.2px;
+                line-height: 1;
+                text-transform: uppercase;
+            }
+
+            .menu-toggle {
+                display: inline-flex !important;
+                position: fixed !important;
+                top: 14px !important;
+                right: 0 !important;
+                inset-inline-end: 0 !important;
+                flex: none !important;
+                left: auto !important;
+                width: 44px;
+                height: 44px;
+                min-height: 44px;
+                margin: 0 !important;
+                padding: 0 2px 0 0;
+                align-items: flex-end !important;
+                justify-content: center !important;
+                translate: none !important;
+                transform: none !important;
+                z-index: 1002;
+                gap: 6px;
+                background: transparent !important;
+                border: 0 !important;
+                box-shadow: none !important;
+                color: #12355e;
+                -webkit-tap-highlight-color: transparent;
+                appearance: none;
+            }
+
+            .menu-toggle:hover,
+            .menu-toggle:focus,
+            .menu-toggle:focus-visible {
+                background: transparent !important;
+                box-shadow: none !important;
+                transform: none !important;
+            }
+
+            .menu-toggle span {
+                width: 32px;
+                height: 2.5px;
+                border-radius: 999px;
+            }
+
+            .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+                transform: translateY(8.5px) rotate(45deg);
+            }
+
+            .menu-toggle[aria-expanded="true"] span:nth-child(3) {
+                transform: translateY(-8.5px) rotate(-45deg);
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--mobile-nav-height);
+                left: 0;
+                right: 0;
+            }
+
+            .hero {
+                min-height: 100svh;
+                padding: calc(var(--mobile-nav-height) + 30px) 18px 32px;
+            }
+
+            .hero-content {
+                width: min(100%, 332px);
+                max-width: 332px;
+            }
+
+            .cross-emblem {
+                margin: 0 auto 14px;
+            }
+
+            .hero h1 {
+                max-width: 100%;
+                font-size: clamp(31px, 8.9vw, 38px);
+            }
+
+            .script-line {
+                max-width: 100%;
+                font-size: clamp(31px, 8.4vw, 36px);
+            }
+
+            .hero-mobile-cutout {
+                width: clamp(196px, 54vw, 216px);
+                height: clamp(220px, 61vw, 244px);
+                margin: 10px auto 0;
+                object-fit: cover;
+                object-position: center 18%;
+            }
+
+            .hero-copy {
+                max-width: 318px;
+                margin: 0 auto;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .hero-actions {
+                width: min(100%, 306px);
+                max-width: 306px;
+                margin: 20px auto 0;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .hero {
+                padding-top: calc(var(--mobile-nav-height) + 26px);
+            }
+
+            .hero-content {
+                width: min(100%, 320px);
+                max-width: 320px;
+            }
+
+            .cross-emblem {
+                margin-bottom: 12px;
+            }
+
+            .eyebrow {
+                max-width: 312px;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 11px;
+                letter-spacing: 2.1px;
+            }
+
+            .hero h1 {
+                max-width: 320px;
+                font-size: 34px;
+                line-height: 0.96;
+            }
+
+            .script-line {
+                max-width: 320px;
+                font-size: 33px;
+            }
+
+            .hero-mobile-cutout {
+                width: clamp(196px, 51vw, 210px);
+                height: clamp(220px, 58vw, 238px);
+                margin-top: 10px;
+            }
+
+            .hero-copy {
+                max-width: 306px;
+                font-size: 15px;
+                line-height: 1.48;
+            }
+
+            .hero-actions {
+                width: min(100%, 306px);
+                max-width: 306px;
+                margin-top: 18px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            nav {
+                --mobile-edge-space: 10px;
+                padding-right: var(--mobile-edge-space);
+                padding-left: var(--mobile-edge-space);
+            }
+
+            .brand {
+                font-size: 18px;
+                letter-spacing: 2.6px;
+            }
+
+            .menu-toggle {
+                top: 14px !important;
+                right: 0 !important;
+                inset-inline-end: 0 !important;
+                flex-basis: auto !important;
+                width: 42px;
+            }
+
+            .menu-toggle span {
+                width: 31px;
+            }
+
+            .hero {
+                padding-top: calc(var(--mobile-nav-height) + 24px);
+            }
+
+            .hero-content {
+                width: min(100%, 304px);
+                max-width: 304px;
+            }
+
+            .eyebrow {
+                max-width: 292px;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 10px;
+                letter-spacing: 1.8px;
+            }
+
+            .hero h1 {
+                max-width: 294px;
+                font-size: 30px;
+                line-height: 0.96;
+            }
+
+            .small-cinzel {
+                font-size: 0.72em;
+            }
+
+            .script-line {
+                max-width: 294px;
+                font-size: 29px;
+            }
+
+            .hero-mobile-cutout {
+                width: clamp(184px, 55vw, 200px);
+                height: clamp(208px, 61vw, 226px);
+                margin-top: 8px;
+            }
+
+            .hero-copy {
+                max-width: 286px;
+                font-size: 14px;
+                line-height: 1.45;
+            }
+
+            .hero-actions {
+                width: min(100%, 282px);
+                max-width: 282px;
+                margin-top: 16px;
+            }
+        }
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
@@ -1712,65 +2006,64 @@
                     <article class="card light-card">
                         <span class="card-label">Ninong</span>
                         <ol class="sponsor-list numbered-list">
-                            <li>Pepito Celiz</li>
-                            <li>Hon. Mayor Antonio G. Fungan Jr.</li>
-                            <li>Edgar Gonzaga</li>
-                            <li>Pastor Welter Balunto</li>
-                            <li>Rolly C. Navarro</li>
-                            <li>Marven J. Feolog</li>
-                            <li>Jilord Laurence Prado</li>
                             <li>Jared Balasoto</li>
-                            <li>Mr. And Mrs . Balderas</li>
-                            <li>Charlie Tusalem</li>
-                            <li>Jimmy Castillo</li>
-                            <li>Renan A. Dagum</li>
-                            <li>Francisco Tillano</li>
-                            <li>Jhony Relliora</li>
-                            <li>Ramel Llanes</li>
-                            <li>Renz Garancho</li>
-                            <li>Vincent Paul Valdez</li>
-                            <li>Noel Tampador</li>
-                            <li>RJ Weaver</li>
-                            <li>Roy Cordero</li>
-                            <li>Larry Fullon</li>
-                            <li>Jayvee Tajan</li>
+                            <li>Mr. And Mrs. Balderas</li>
+                            <li>Pastor Welter Balunto</li>
                             <li>Ronel Calawis</li>
-                            <li>Mr & Mrs. Aladin</li>
+                            <li>Jimmy Castillo</li>
+                            <li>Pepito Celiz</li>
+                            <li>Roy Cordero</li>
+                            <li>Renan A. Dagum</li>
+                            <li>Marven J. Feolog</li>
+                            <li>Larry Fullon</li>
+                            <li>Hon. Mayor Antonio G. Fungan Jr.</li>
+                            <li>Renz Garancho</li>
+                            <li>Edgar Gonzaga</li>
+                            <li>Mr. &amp; Mrs. Aladin A. Lamalan</li>
+                            <li>Ramel Llanes</li>
+                            <li>Rolly C. Navarro</li>
+                            <li>Jilord Laurence Prado</li>
+                            <li>Jhony Relliora</li>
+                            <li>Jayvee Tajan</li>
+                            <li>Noel Tampador</li>
+                            <li>Francisco Tillano</li>
+                            <li>Charlie Tusalem</li>
+                            <li>Vincent Paul Valdez</li>
+                            <li>RJ Weaver</li>
                         </ol>
                     </article>
 
                     <article class="card light-card">
                         <span class="card-label">Ninang</span>
                         <ol class="sponsor-list numbered-list">
-                            <li>Cynthia Mae Dapilaga</li>
-                            <li>Mary Ann Remegio</li>
-                            <li>Jennet Aniversario</li>
-                            <li>May Dela Cruz</li>
-                            <li>Jennybelle D. Calanza</li>
-                            <li>Maria Loraine R. Gayola</li>
-                            <li>Ria Ann E. Dumalina</li>
-                            <li>Vevina Grace Lasconia</li>
-                            <li>Hydie A. Dudin</li>
-                            <li>Ritchel L. Gonzales</li>
-                            <li>Edna B. Pimentel</li>
-                            <li>Mary Grace Aljas</li>
-                            <li>Xyrene Kaye Maxian</li>
-                            <li>Meisha Lyra Jondayran</li>
-                            <li>Zipporah P. Rugay</li>
-                            <li>Mae Ann C. Dellomes</li>
                             <li>Grace F. Agustin</li>
-                            <li>Rhea Ferrer</li>
-                            <li>Lea Valeriano</li>
-                            <li>Ellen Escoto</li>
-                            <li>Cris Magbanua</li>
-                            <li>Nona Mae D. Dayo</li>
-                            <li>Miven Villasis</li>
-                            <li>Caroline C. Perocho</li>
-                            <li>Mariela C. Diez</li>
+                            <li>Mary Grace Aljas</li>
+                            <li>Jennet Aniversario</li>
                             <li>Marites Bernabe</li>
-                            <li>Sheryl Gambino</li>
+                            <li>Jennybelle D. Calanza</li>
+                            <li>Caroline C. Perocho</li>
                             <li>Ivy Castigador</li>
                             <li>Lorenel Catequista</li>
+                            <li>Cynthia Mae Dapilaga</li>
+                            <li>Nona Mae D. Dayo</li>
+                            <li>Mae Ann C. Dellomes</li>
+                            <li>Mariela C. Diez</li>
+                            <li>Hydie A. Dudin</li>
+                            <li>Ria Ann E. Dumalina</li>
+                            <li>Ellen Escoto</li>
+                            <li>Rhea Ferrer</li>
+                            <li>Sheryl Gamino</li>
+                            <li>Maria Loraine R. Gayola</li>
+                            <li>Ritchel L. Gonzales</li>
+                            <li>Meisha Lyra Jondayran</li>
+                            <li>Vevina Grace Lasconia</li>
+                            <li>Cris Magbanua</li>
+                            <li>May Dela Cruz</li>
+                            <li>Xyrene Kaye Maxian</li>
+                            <li>Mary Ann Remegio</li>
+                            <li>Zipporah P. Rugay</li>
+                            <li>Lea Valeriano</li>
+                            <li>Miven Villasis</li>
                         </ol>
                     </article>
                 </div>
@@ -1793,7 +2086,7 @@
                             <li>Educational toys</li>
                             <li>Monetary gift for savings</li>
                         </ul>
-                    </article>
+                </article>
 
                     <article class="card light-card">
                         <span class="card-label">A Loving Note</span>
